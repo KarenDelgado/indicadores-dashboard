@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizador de Indicadores CFE</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <div id="loading" class="loading-overlay">
+    <div class="loader-card">
+      <div class="spinner"></div>
+      <p>Cargando datos...</p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="header">
+      <h1>Visualizador de Indicadores</h1>
+      <p>
+        Sube el archivo Excel, selecciona el mes y la zona. 
+      </p>
+
+      <div class="upload-box">
+        <label for="archivoExcel">Seleccionar archivo .xlsx</label>
+        <input type="file" id="archivoExcel" accept=".xlsx, .xls">
+      </div>
+    </div>
+
+    <div id="error" class="error"></div>
+
+    <div id="controls" class="controls">
+      <div>
+        <label for="selectMes">Mes</label>
+        <select id="selectMes"></select>
+      </div>
+
+      <div>
+        <label for="selectZona">Zona / Columna</label>
+        <select id="selectZona"></select>
+      </div>
+    </div>
+
+    <div id="cards" class="cards"></div>
+
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/loading.js"></script>
+</body>
+</html>
