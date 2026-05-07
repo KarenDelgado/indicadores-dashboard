@@ -5,7 +5,7 @@ Aplicación web desarrollada con HTML, CSS y JavaScript para cargar archivos Exc
 ## Funciones
 
 - Carga de archivos Excel `.xlsx`
-- Lectura de hojas DATOS y Estadistica Real
+- Lectura de tablas
 - Selección de mes
 - Selección de zona
 - Cálculo automático de indicadores
