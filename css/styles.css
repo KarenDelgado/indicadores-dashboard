@@ -87,7 +87,33 @@ body {
       padding: 6px 12px;
       border-radius: 8px;
       font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .card-icon-wrap {
       margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-icon {
+      width: 68px;
+      height: 68px;
+      border-radius: 16px;
+      background: #ffffff;
+      color: #0f766e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .card-icon svg {
+      width: 38px;
+      height: 38px;
+      display: block;
     }
 
     .card h3 {
@@ -95,11 +121,38 @@ body {
       color: #0f766e;
     }
 
-    .valor {
-      font-size: 30px;
+    .valores-dobles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .valor-bloque {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 12px;
+      min-width: 0;
+    }
+
+    .valor-label {
+      display: block;
+      font-size: 13px;
       font-weight: bold;
-      margin: 15px 0;
+      color: #64748b;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .valor {
+      display: block;
+      font-size: 26px;
+      font-weight: bold;
       color: #0f172a;
+      line-height: 1.1;
+      word-break: break-word;
     }
 
     .actividad {
@@ -183,4 +236,23 @@ body {
       .cards {
         grid-template-columns: 1fr;
       }
+
+      .valores-dobles {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .valores-solo {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .valor-ok {
+      color: #15803d;
+    }
+
+    .valor-mal {
+      color: #dc2626;
     }
